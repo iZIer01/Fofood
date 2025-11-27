@@ -109,7 +109,7 @@ const AboutUsSection = () => {
         <h2 className='text-[#DB6885] text-[20px] font-semibold '>Popular Menu</h2>
         <h3 className='text-[28px] font-[Figtree] font-bold'>Most Popular Food</h3>
         
-        <div className='grid grid-cols-2 place-items-center gap-12'>
+        <div className='grid grid-cols-2 place-items-center py-8 gap-12'>
 
           {
           popularFoods.map((food,index)=>{
@@ -118,6 +118,7 @@ const AboutUsSection = () => {
                     <img 
                       src={food.image}
                       alt={food.title}
+                      className='w-36 h-36 object-contain mx-auto'
                     />
 
                     {/* Food Description */}
@@ -145,7 +146,7 @@ const AboutUsSection = () => {
       </section>
 
       {/* See all Menu */}
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center '>
         <LearnMore text="See All Menu"/>
       </div>
     
