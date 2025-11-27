@@ -4,6 +4,7 @@ import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import Explore from './Components/Explore/Explore'
+import AboutUsSection from './Components/AboutUs/AboutUsSection'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <Explore/>
+      <AboutUsSection/>
     </div>
   )
 }
