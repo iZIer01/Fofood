@@ -1,11 +1,14 @@
 import React from 'react'
 
+// Images 
 import item2 from "../../assets/Images/ExploreItem/image (2).png"
 import item3 from "../../assets/Images/ExploreItem/image (3).png"
 import item4 from "../../assets/Images/ExploreItem/image (4).png"
 import item5 from "../../assets/Images/ExploreItem/image (5).png"
 import item6 from "../../assets/Images/ExploreItem/image (6).png"
 import item8 from "../../assets/Images/ExploreItem/image (8).png"
+import man from "../../assets/Images/ExploreItem/man.jpeg"
+import girl from "../../assets/Images/ExploreItem/gir.jpeg"
 
 
 const Explore = () => {
@@ -52,10 +55,12 @@ const deliciousMenu = [
         title:"Drinks",
         caption:"0 Menu"        
     }    
+
+    
 ]
 
   return (
-    <section className='flex flex-col items-center justify-center py-20'>
+    <section className='flex flex-col items-center justify-center py-20 px-5'>
         <h3 className='text-[#DB6885] text-2xl font-semibold font-[fredoka]'>Explore</h3>
         <h2 className='text-3xl font-semibold mt-4 mb-7'>Our Delicious Menu</h2>
            
@@ -74,11 +79,24 @@ const deliciousMenu = [
                             
                     </div>
                 )
-            })
+            })}
 
-           }
-           
-           
+            {/* Card Of man and girl */}
+            <section className='py-10 grid grid-cols-2 place-items-center gap-6'>
+                <img 
+                    src={man}
+                    alt='chief with cupcake'   
+                    className=' w-full rounded-2xl object-contain'
+                />
+                
+                <img 
+                    src={girl}
+                    alt='girl with cupcake'   
+                    className=' w-full rounded-2xl object-contain mt-10'
+                />
+
+            </section>
+
     </section>
   )
 }
