@@ -7,6 +7,8 @@ import profileImg2 from '../../assets/Images/Testimonial/image (9).png'
 
 // Icons
 import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
+import CircleIcon from '@mui/icons-material/Circle';
+
 
 
 const Testimonials = () => {
@@ -25,7 +27,7 @@ const Testimonials = () => {
            
 
     return (
-    <div className='w-full min-h-[480px] pt-9 pb-16 bg-cover flex flex-col items-center ' style={{backgroundImage:`url(${bgImage})`}}>
+    <div className='w-full min-h-[480px] pt-9 pb-11 bg-cover flex flex-col items-center ' style={{backgroundImage:`url(${bgImage})`}}>
         <h3 className='text-[#DB6885] text-[20px] font-bold'>Testimonial</h3>
         <h3 className='text-[24px] font-bold py-3 mb-9'>What People Say</h3>
         
@@ -56,7 +58,14 @@ const Testimonials = () => {
                         </div>
                     )
                 })
-            }                
+            }      
+            
+            {/* Navigation Indicator */}
+            <div className='pt-10'>
+                <CircleIcon sx={{height:"17px", color:"#DB6885"}}/>   
+                <CircleIcon sx={{height:"17px", color:"#FFD3D7"}}/>   
+
+            </div>          
     </div>
   )
 }

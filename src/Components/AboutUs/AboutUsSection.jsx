@@ -86,12 +86,12 @@ const AboutUsSection = () => {
           <img 
               src={girl}
               alt='girl with cupcake'   
-              className=' w-full rounded-2xl object-contain mt-10'
+              className=' w-full rounded-2xl object-contain mt-17'
           />
       </div>
 
       {/* About Us Introduction */}
-      <section className=' font-[Figtree] '>
+      <section className=' font-[Figtree] my-7'>
         <h3 className='text-[#DB6885] text-[20px] font-semibold  '>About us</h3>
         <h2 className='text-[28px] font-bold py-4'>Welcome to Fofood</h2>
         <p className=' font-light text-[#707070] text-[17.6px]'>
