@@ -7,6 +7,7 @@ import Explore from './Components/Explore/Explore'
 import AboutUsSection from './Components/AboutUs/AboutUsSection'
 import Testimonials from './Components/Testimonials/Testimonials'
 import OurBlog from './Components/OurBlog/OurBlog'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Testimonials/>
       </div>
       <OurBlog/>
+      <Footer/>
     </div>
   )
 }
